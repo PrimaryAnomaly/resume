@@ -1,0 +1,127 @@
+\documentclass[letterpaper,11pt]{moderncv}
+\moderncvstyle{banking}
+\usepackage{xpatch}
+\moderncvcolor{black} % Subtle, classic color
+\AtBeginDocument{\definecolor{color2}{rgb}{0,0,0}} % Force first name black
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{xcolor} % Ensure color support
+\usepackage{graphicx} % Support for images
+\usepackage{fontspec} % Support for Unicode characters
+\setmainfont{Times New Roman} % Set English font
+% \newfontfamily\koreanfont{Noto Sans CJK KR} % Korean font (uncomment if needed)
+\pagenumbering{arabic} % Ensure page numbering is defined
+\usepackage[unicode]{hyperref} % Load hyperref after setting page numbering
+\sloppy % Allow LaTeX to relax spacing issues
+\usepackage{enumitem} % Allows list customization
+
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%==================== PERSONAL INFO ====================%
+\name{\textcolor{black}{Saeyoung}}{Kim}
+\address{Cambridge, MA, USA}
+\phone[mobile]{+1 (351) 322 5510}
+\email{saeyoung\_kim@uml.edu}
+\social[linkedin]{saeyoung-macx-kim}
+\social[github]{PrimaryAnomaly}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+%==================== SUMMARY ====================%
+\section{Professional Summary}
+Driven by developing resilient, autonomous infrastructure for first-generation Mars colonies. Experienced in embedded systems, sensor integration, hardware/software co-design, PCB development, and system architecture, with skills in sensing, actuation, and communications integration using MATLAB, Python, and C/C++. Previously an Electronic Design Integration and Assembly, Integration, and Testing (AIT) Engineer at Hanwha Systems, handling systems integration, performance validation, and EM/QM/FM test campaigns for military SAR satellites. Currently a postdoctoral researcher at UMass Lowell developing digital twin frameworks with MSPC for real-time monitoring in mRNA-LNP vaccine manufacturing, building process control foundations for life-critical systems in extreme environments.
+
+\section{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Programming}{Python, C/C++, MATLAB}
+\cvitem{CAD/CAM}{Fusion360, AutoCAD, KiCad}
+\cvitem{Hardware}{Jigs, PCB, Embedded, Systems Integration}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Fabrication}{3D Printing, Laser Cutting, CNC}
+\cvitem{DevOps}{Git, Docker, Linux}
+\cvitem{Methods}{Space Hardware AIT, Freezedrying, MSPC}
+\end{minipage}
+
+%==================== EXPERIENCE ====================%
+\section{Professional Experience}
+
+\cventry{2025.07--Present}{\textbf{Postdoctoral Associate} | Freeze-drying Modeling and Process Control Software Development}{University of Massachusetts Lowell}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Developed digital twin framework integrating physics-based modeling with MSPC for pharmaceutical manufacturing
+    \item Led real-time quality monitoring system development for mRNA-LNP vaccine production, analyzing 100+ batches
+    \item Built Python software suite replacing commercial platforms (gPROMS, SIMCA) for reproducible process development
+    \item Designed end-to-end data pipeline for multi-day batch cycles with automated quality prediction
+    \item Co-authoring high-impact journal manuscripts (IF 10+); leading deliverables for government-funded collaboration
+\end{itemize}}
+
+\cventry{2024.02--2025.05}{\textbf{Systems Integration Engineer} | Satellite Systems Design \& Integration and Testing}{Hanwha Systems}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Led system integration and validation of military SAR satellites.  
+    \item Developed and executed Electric Test Bed (ETB) test procedures for performance and integration.  
+    \item Defined and executed test plans for embedded systems and communications.  
+    \item Designed high-level Electrical Ground Support Equipment (EGSE) architecture and integration test plans.  
+    \item Developed electrical Integrated Systems Test (IST) plans for Flight Model Assembly, Integration, and Testing.  
+    \item Diagnosed and resolved hardware/software interactions in networked systems.  
+    \item Contributed to designing a high-throughput satellite manufacturing facility. 
+\end{itemize}}
+
+%==================== EDUCATION ====================%
+\section{Education}
+\cventry{2017.03--2024.02}{\textbf{PhD in Electrical Engineering} | CubeSat Embedded Systems \& Sensor Integration}{Korea University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Secured and managed 300M KRW (\$220K) research grant for CubeSat biological payload R\&D
+    \item Designed and fabricated multi-modal electrochemical and optical sensor suite for space applications
+    \item Developed MCU firmware in C/C++ for real-time sensor data acquisition and autonomous operation
+    \item Built and validated embedded system prototypes including circuit design, PCB layout, and system integration
+    \item Debugged complex hardware/software interactions in networked electromechanical devices
+    \item Published 3 first-author SCI papers (cumulative IF: 17.4) and co-authored 10+ publications
+\end{itemize}}
+
+\cventry{2013.03--2017.02}{\textbf{BSc in Mechanical Engineering}}{Konkuk University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Conducted research at the Smart Materials Nano Lab, focusing on electrochemical sensor development.
+    \item Gained hands-on experience in CAD modeling, PCB prototyping, microfabrication, and academic writing.
+\end{itemize}}
+
+%==================== PUBLICATIONS ====================%
+\section{Publications}
+\subsection{Journal Publications}
+\begin{sloppypar} % Prevents underfull box errors
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item \textbf{\underline{Saeyoung Kim}}, Jaewon Lee, Kimia Babaei, Seonkgyu Yoon, "Digital Twins in Lyophilization: Advances in Pharmaceutical Process Development and Optimization," \textit{Biotechnology Advances}, 2026. (Manuscript in Preparation, Target Submission: Q1 2026)
+    \item Jinhwee Kil, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "Investigation of thermal management strategies for biological CubeSat payloads," Acta Astronautica, 2024, Art. no. 228. DOI: 10.1016/j.actaastro.2024.11.059.
+    \item \textbf{\underline{Kim, S.}}; Park, S.; Pak, J.J., "Multi-Modal Multi-Array Electrochemical and Optical Sensor Suite for a Biological CubeSat Payload," MDPI Sensors, 2024, 24, Art. no. 265. DOI: 10.3390/s24010265.
+    \item Ji-Hoon Han, Sang Hyun Park, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "A Performance Improvement of Enzyme-Based Electrochemical Lactate Sensor Fabricated by Electroplating Novel PdCu Mediator on a Laser Induced Graphene Electrode," Bioelectrochemistry, 2022, 148, 108259. DOI: 10.1016/j.bioelechem.2022.108259.
+    \item \textbf{\underline{Saeyoung Kim}}, Ji-Hoon Han, Beelee Chua, James Jungho Pak, "A pH Sensing Pipette for Cross-Contamination Prevention in Industrial Fermentation," IEEE Transactions on Industrial Electronics, 2022, 69(7), 7461-7469. DOI: 10.1109/TIE.2021.3099251.
+    \item S.D. Raut, N.M. Shinde, B.G. Ghule, \textbf{\underline{S. Kim}}, J.J. Pak, Q. Xia, R.S. Mane, "Room-Temperature Solution Processed Sharp-Edged Nanoshapes of," Chemical Engineering Journal, 2022, 433(2), 133627. DOI: 10.1016/j.cej.2021.133627.
+    \item S.E. Jeong, \textbf{\underline{S. Kim}}, J.H. Han, J. Jungho Pak, "Simple Laser-Induced Graphene Fiber Electrode Fabrication for High-Performance Heavy-Metal Sensing," Microchemical Journal, 2022, 172, 106950. DOI: 10.1016/j.microc.2021.106950.
+    \item Sanghoon Cho, Jungmo Jung, \textbf{\underline{Saeyoung Kim}}, James Pak, "Conduction Mechanism and Synaptic Behaviour of Interfacial Switching AlOσ-based RRAM," Semiconductor Science and Technology, 2020, 35(8), 085006. DOI: 10.1088/1361-6641/ab8d0e.
+    \item Ji-Hoon Han, \textbf{\underline{Saeyoung Kim}}, Jaesung Choi, Sora Kang, Youngmi Kim Pak, James Jungho Pak, "Development of Multi-Well-Based Electrochemical Dissolved Oxygen Sensor Array," Sensors and Actuators B: Chemical, 2020, 306, 127465. DOI: 10.1016/j.snb.2019.127465.
+\end{itemize}
+\end{sloppypar}
+
+\subsection{Conference Presentations}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item \textit{Thermal Management System for a Fluidic Card in a Small Satellite Biological Payload}, Korean Institute of Electrical Engineers (KIEE) Autumn Conference, 2022.
+    \item \textit{A Pipette with an Integrated pH Sensor for Liquid Sampling Applications}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2019.
+    \item \textit{IoT System for Monitoring pH, Dissolved Oxygen, Temperature, and Electrical Conductivity in Liquids}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2018.
+    \item \textit{Development Trends of Non-Invasive Glucose Sensor Technology}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2017.
+\end{itemize}
+\end{sloppypar}
+
+\subsection{Seminar Presentations}
+\begin{itemize}[leftmargin=0.5cm, itemsep=2pt, parsep=1pt]
+    \item \textit{Bioprocessing in Space: Challenges and Opportunities for Pharmaceutical Manufacturing Beyond Earth}, Lowell Center for Space Science and Technology (LoCSST), UMass Lowell, 2025.
+\end{itemize}
+
+\vfill
+\centering{References available upon request.}
+
+\end{document}
