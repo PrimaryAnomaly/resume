@@ -1,46 +1,37 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Personal CV/resume repository for Saeyoung Kim. LaTeX resume targeting postdoctoral and systems engineering positions.
 
-## Project Overview
+## Critical Rule
 
-Personal CV/resume repository for Saeyoung Kim. Contains a LaTeX resume targeting postdoctoral and systems engineering positions.
+**NEVER fabricate details.** If the user doesn't provide specific numbers, metrics, technologies, or accomplishments—ASK. Do not invent:
+- Percentages or metrics
+- Team sizes or budgets
+- Technologies or tools
+- Dates or timelines
+- Project outcomes
 
-## Build Commands
+Always ask: "What was the measurable impact?" or "Can you provide specific numbers?"
 
-Compile the resume with XeLaTeX (required for fontspec/Unicode support):
+## Resume Writing Rules
+
+- **Achievements, not duties**: Describe what you accomplished, not what you were responsible for
+- **Quantify**: Use numbers (%, $, team size, scale) when the user provides them
+- **Strong verbs**: Designed, Led, Architected, Delivered—not Helped, Assisted, Worked on
+- **No fluff**: Cut buzzwords, passive voice, vague claims
+- **Bullet formula**: `[Verb] + [What] + [How] + [Result]`
+
+## Build
 
 ```bash
-cd resume_postdoc
-xelatex resume_postdoc.tex
+cd resume_postdoc && xelatex resume_postdoc.tex
 ```
-
-## Font Requirements
-
-- **English**: Times New Roman
-- **Korean**: Noto Sans CJK KR (optional - commented out if not installed)
-
-## File Structure
-
-- `resume_postdoc/resume_postdoc.tex` - Main resume document using `moderncv` class (banking style)
 
 ## LaTeX Notes
 
-- Uses `fontspec` package requiring XeLaTeX or LuaLaTeX compiler
-- Document class: `moderncv` with `banking` style
-- Page margins: 0.6 inches on letter paper
-- Hyperlinks enabled via `hyperref` with Unicode support
-
-## moderncv Quirks
-
-- **First name color**: Banking style renders first name in gray by default. Fix by wrapping in `\textcolor{black}{}` inside `\name{}`:
-  ```latex
-  \name{\textcolor{black}{Saeyoung}}{Kim}
-  ```
-
-- **Position emphasis**: Use `\textbf{}` around job titles in cventry to make them stand out:
-  ```latex
-  \cventry{dates}{\textbf{Job Title} | Description}{Employer}{Location}{}{}
-  ```
-
-- **Location alignment**: Keep location text short to avoid alignment issues. Use US state abbreviations (MA, not Massachusetts)
+- Requires XeLaTeX (for fontspec)
+- Class: `moderncv` with `banking` style
+- Font: Times New Roman
+- Fix gray first name: `\name{\textcolor{black}{Saeyoung}}{Kim}`
+- Bold job titles: `\cventry{dates}{\textbf{Title}}{Employer}{Location}{}{}`
+- Use state abbreviations (MA, not Massachusetts)
