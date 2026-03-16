@@ -23,9 +23,13 @@ Always ask: "What was the measurable impact?" or "Can you provide specific numbe
 
 ## Build
 
+XeLaTeX is installed via MiKTeX on Windows, not in WSL. Compile using `cmd.exe`:
+
 ```bash
-cd resume_postdoc && xelatex resume_postdoc.tex
+cmd.exe /c "cd /d D:\GitHubRepos\resume\<subfolder> && xelatex.exe <filename>.tex"
 ```
+
+Do NOT use `xelatex` directly in bash — it will fail with "command not found".
 
 ## LaTeX Notes
 
