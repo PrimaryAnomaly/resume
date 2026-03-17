@@ -1,0 +1,107 @@
+\documentclass[letterpaper,11pt]{moderncv}
+\moderncvstyle{banking}
+\usepackage{xpatch}
+\moderncvcolor{black} % Subtle, classic color
+\AtBeginDocument{\definecolor{color2}{rgb}{0,0,0}} % Force first name black
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{xcolor} % Ensure color support
+\usepackage{graphicx} % Support for images
+\usepackage{fontspec} % Support for Unicode characters
+\setmainfont{Times New Roman} % Set English font
+\pagenumbering{arabic} % Ensure page numbering is defined
+\usepackage[unicode]{hyperref} % Load hyperref after setting page numbering
+\sloppy % Allow LaTeX to relax spacing issues
+\usepackage{enumitem} % Allows list customization
+
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%==================== PERSONAL INFO ====================%
+\name{\textcolor{black}{Saeyoung}}{Kim}
+\address{Cambridge, MA, USA}
+\phone[mobile]{+1 (351) 322 5510}
+\email{saeyoung\_kim@uml.edu}
+\social[linkedin]{saeyoung-macx-kim}
+\social[github]{PrimaryAnomaly}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+%==================== SUMMARY ====================%
+\section{Professional Summary}
+R\&D robotics technician with 9+ years of hands-on experience building, testing, and troubleshooting complex electromechanical systems across embedded electronics, sensors, and integrated robotic platforms. Independently conducts prototype builds, design validation testing, and root cause analysis of system failures in dense electromechanical sub-assemblies. Creates test plans and procedures with minimal engineering guidance, identifies nuanced design issues, and recommends corrective actions. Proficient with lab equipment including oscilloscopes, power supplies, programmable loads, and thermal probes. Experienced in Python, command-line operations in Linux, test automation, and CAD tools. Thrives in fast-paced, multi-priority R\&D environments.
+
+\section{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Electromechanical}{Prototype Builds, Sub-assembly Integration, Troubleshooting}
+\cvitem{Electronics}{Circuit Design, PCB Layout, Soldering, PCB Rework, Cable Assembly}
+\cvitem{Lab Equipment}{Oscilloscopes, Power Supplies, Programmable Loads, Thermal Probes, Multimeters}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Software}{Python, C/C++, MATLAB, Linux CLI, Git, Docker}
+\cvitem{CAD/Fabrication}{Fusion360, AutoCAD, KiCad, 3D Printing, Laser Cutting, CNC}
+\cvitem{Methods}{Test Plan Development, Design Validation, Root Cause Analysis, Test Automation}
+\end{minipage}
+
+%==================== EXPERIENCE ====================%
+\section{Professional Experience}
+
+\cventry{2025.07--Present}{\textbf{Postdoctoral Associate} | Test Automation and Data Acquisition System Development}{University of Massachusetts Lowell}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Built automated test and data acquisition pipelines in Python for multi-day experimental cycles, replacing manual monitoring with real-time quality prediction
+    \item Maintained and monitored long-running test-stand experiments, collecting data and communicating unexpected results to engineering stakeholders
+    \item Developed test automation scripts eliminating manual data collection across 100+ production batches
+    \item Planned lab equipment configurations and project timelines in coordination with research managers and engineers
+    \item Collaborated across cross-functional teams to translate experimental needs into validated technical tools and procedures
+\end{itemize}}
+
+\cventry{2024.02--2025.05}{\textbf{Systems Integration Engineer} | Electromechanical Integration and Testing}{Hanwha Systems}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Conducted initial builds and integration of complex electromechanical sub-assemblies including computers, power distribution systems, and embedded processors for satellite systems
+    \item Independently performed design validation testing for new subsystems; troubleshot and identified root causes of system failures in sub-assemblies and complete integrated systems
+    \item Created test plans and procedures with minimal engineering guidance; identified detailed design issues and recommended corrective actions to design engineers
+    \item Designed custom test fixtures and Electrical Ground Support Equipment (EGSE) architectures using CAD tools
+    \item Planned lab workspaces and project timelines in coordination with managers and engineers to support prototype assembly campaigns
+    \item Maintained and monitored long-running integration test campaigns, collecting test data and communicating anomalies
+    \item Interpreted engineering drawings, schematics, and equipment specifications for daily test operations
+\end{itemize}}
+
+%==================== EDUCATION ====================%
+\section{Education}
+\cventry{2017.03--2024.02}{\textbf{PhD in Electrical Engineering} | Embedded Systems and Electromechanical Prototyping}{Korea University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Built and validated prototype electromechanical sub-assemblies through full cycle: circuit design, PCB layout, component assembly, sensor integration, and system-level testing
+    \item Designed and fabricated custom test fixtures and embedded data acquisition systems for robotic payload applications
+    \item Developed MCU firmware in C/C++ for real-time sensor data acquisition and autonomous system operation
+    \item Troubleshot and identified root causes of failures in complex, networked electromechanical devices
+    \item Performed PCB rework and cable assembly for technically difficult prototype integrations
+    \item Operated and maintained lab equipment including oscilloscopes, power supplies, multimeters, and thermal measurement tools
+    \item Secured and managed \$220K research grant; trained junior researchers on hardware assembly and test equipment operation
+    \item Published 2 first-author and 6 co-authored journal papers on embedded sensors and space systems
+\end{itemize}}
+
+\cventry{2013.03--2017.02}{\textbf{BSc in Mechanical Engineering}}{Konkuk University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Conducted hands-on research in electrochemical sensor fabrication and electromechanical prototyping
+    \item Gained experience in CAD modeling, PCB prototyping, schematic interpretation, and precision measurement
+\end{itemize}}
+
+%==================== PUBLICATIONS ====================%
+\section{Selected Publications}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item \textbf{\underline{Kim, S.}}; Park, S.; Pak, J.J., "Multi-Modal Multi-Array Electrochemical and Optical Sensor Suite for a Biological CubeSat Payload," MDPI Sensors, 2024, 24, Art. no. 265.
+    \item Jinhwee Kil, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "Investigation of thermal management strategies for biological CubeSat payloads," Acta Astronautica, 2024, Art. no. 228.
+    \item \textbf{\underline{Saeyoung Kim}}, Ji-Hoon Han, Beelee Chua, James Jungho Pak, "A pH Sensing Pipette for Cross-Contamination Prevention in Industrial Fermentation," IEEE Trans. Industrial Electronics, 2022, 69(7), 7461-7469.
+    \item Ji-Hoon Han, \textbf{\underline{Saeyoung Kim}} et al., "Development of Multi-Well-Based Electrochemical Dissolved Oxygen Sensor Array," Sensors and Actuators B: Chemical, 2020, 306, 127465.
+\end{itemize}
+\end{sloppypar}
+
+\vfill
+\centering{References available upon request.}
+
+\end{document}
