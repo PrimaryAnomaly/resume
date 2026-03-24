@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Personal CV/resume repository for Saeyoung Kim. LaTeX resume targeting postdoctoral and systems engineering positions.
+Personal CV/resume repository for Saeyoung Kim. LaTeX resumes targeting manufacturing test, systems integration, and hardware engineering positions.
 
 ## Critical Rule
 
@@ -26,15 +26,22 @@ Always ask: "What was the measurable impact?" or "Can you provide specific numbe
 - **No fluff**: Cut buzzwords, passive voice, vague claims
 - **Bullet formula**: `[Verb] + [What] + [How] + [Result]`
 
+## Cover Letters
+
+- Use `\makelettertitle` / `\makeletterclosing` with `\recipient`, `\date`, `\opening`, `\closing`. Do NOT use `\makecvtitle` for cover letters (causes header/content overlap).
+- Do NOT claim security clearance eligibility. User is not a US citizen.
+- If a role requires clearance, flag it and confirm before writing.
+
 ## Build
 
-XeLaTeX is installed via MiKTeX on Windows, not in WSL. Compile using `cmd.exe`:
+XeLaTeX is installed via MiKTeX on Windows, not in WSL. Compile using `cmd.exe` with the Windows path equivalent of the current working directory:
 
 ```bash
-cmd.exe /c "cd /d D:\GitHubRepos\resume\<subfolder> && xelatex.exe <filename>.tex"
+cmd.exe /c "cd /d <windows-path-to-subfolder> && xelatex.exe <filename>.tex"
 ```
 
 Do NOT use `xelatex` directly in bash — it will fail with "command not found".
+Run twice for cross-references to resolve cleanly.
 
 ## LaTeX Notes
 
