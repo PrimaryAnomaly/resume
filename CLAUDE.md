@@ -13,6 +13,11 @@ Personal CV/resume repository for Saeyoung Kim. LaTeX resume targeting postdocto
 
 Always ask: "What was the measurable impact?" or "Can you provide specific numbers?"
 
+## Writing Style
+
+- **Sound human**: Write like a real person, not an AI. Cover letters and prose must read naturally and conversationally. Avoid formulaic structures, overly polished phrasing, and dead giveaway AI phrases like "I am eager to apply," "I would welcome the opportunity," "This experience maps directly to," "I bring direct experience," "I thrive in," etc. Write the way someone would actually talk about their work.
+- **No em dashes**: Do not use em dashes (---) in any document. Use periods, commas, or restructure sentences instead.
+
 ## Resume Writing Rules
 
 - **Achievements, not duties**: Describe what you accomplished, not what you were responsible for
