@@ -1,0 +1,105 @@
+\documentclass[letterpaper,11pt]{moderncv}
+\moderncvstyle{banking}
+\usepackage{xpatch}
+\moderncvcolor{black}
+\AtBeginDocument{\definecolor{color2}{rgb}{0,0,0}}
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\pagenumbering{arabic}
+\usepackage[unicode]{hyperref}
+\sloppy
+\usepackage{enumitem}
+
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%==================== PERSONAL INFO ====================%
+\name{\textcolor{black}{Saeyoung}}{Kim}
+\address{Cambridge, MA, USA}
+\phone[mobile]{+1 (351) 322 5510}
+\email{saeyoung\_kim@uml.edu}
+\social[linkedin]{saeyoung-macx-kim}
+\social[github]{PrimaryAnomaly}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+%==================== SUMMARY ====================%
+\section{Professional Summary}
+Manufacturing and integration engineer with hands-on experience in process development, production support, and technical team leadership across aerospace hardware programs. Led AIT campaigns for military satellite hardware, wrote and maintained controlled manufacturing procedures, drove root cause analysis and corrective actions, and trained junior engineers on assembly and test processes. Background in SPC-based process monitoring, Python-based data automation, documentation systems, and cross-functional coordination between engineering and production teams. BSc in Mechanical Engineering, PhD in Electrical Engineering.
+
+\section{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Manufacturing}{Process Development, Work Instructions, Assembly Procedures, ECO/Revision Control, Production Floor Support}
+\cvitem{Quality/Process}{SPC, Root Cause Analysis (8D, 5 Why), Process Monitoring, Anomaly Detection, Corrective/Preventive Actions}
+\cvitem{Programming}{Python, MATLAB, SQL, Bash, Git, Linux}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{CAD/Design}{SolidWorks, Fusion360, AutoCAD, KiCad}
+\cvitem{Electronics}{Circuit Design, PCB Layout, Soldering, PCBA Rework, Schematics/GD\&T}
+\cvitem{Software}{MS Office Suite, Jira, SharePoint, ERP Concepts}
+\end{minipage}
+
+%==================== EXPERIENCE ====================%
+\section{Professional Experience}
+
+\cventry{2025.07--Present}{\textbf{Postdoctoral Associate} | Process Monitoring and Data-Driven Diagnostics}{University of Massachusetts Lowell}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Built Python-based SPC and diagnostic software replacing commercial platforms for real-time manufacturing process monitoring
+    \item Developed automated data pipelines with scheduled reporting for anomaly detection across 100+ production batches
+    \item Performed data extraction, parsing, and analytics to identify process deviations and drive corrective actions
+    \item Translated cross-functional stakeholder requirements into standardized procedures and technical documentation
+\end{itemize}}
+
+\cventry{2024.02--2025.05}{\textbf{Systems Integration Engineer} | Satellite Assembly, Integration, and Testing}{Hanwha Systems}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Developed and executed system-level test and assembly procedures for military SAR satellite programs across EM, QM, and FM builds
+    \item Managed transition of engineering design intent into production-ready work instructions and assembly documentation
+    \item Performed root cause analysis of manufacturing defects using structured problem-solving methods and drove corrective actions to prevent recurrence
+    \item Provided technical disposition recommendations for discrepant material during integration campaigns
+    \item Contributed to facility architecture planning for a high-throughput satellite production line, addressing workflow, cycle time, and layout
+    \item Coordinated across electrical, mechanical, software, and program teams to balance production schedules with engineering changes
+    \item Trained and mentored junior engineers and technicians on assembly procedures, test equipment operation, and troubleshooting methodology
+    \item Managed purchasing, integration, and commissioning of functional test and tooling systems
+    \item Participated in design reviews to provide manufacturing feedback and ensure testability and buildability
+\end{itemize}}
+
+%==================== EDUCATION ====================%
+\section{Education}
+\cventry{2017.03--2024.02}{\textbf{PhD in Electrical Engineering} | Hardware Systems Development}{Korea University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Secured and managed \$220K research grant, owning budget, scheduling, and build-vs-buy decisions for hardware program
+    \item Designed and optimized manufacturing processes for multi-sensor hardware through iterative prototype-to-qualification cycles
+    \item Developed tooling, fixtures, and test setups for production characterization using oscilloscopes, DMMs, and function generators
+    \item Performed cleanroom fabrication including photolithography, thin-film deposition, and chemical processing with process control documentation
+    \item Diagnosed cross-domain failures (mechanical, electrical, firmware) and implemented corrective actions across multiple revision cycles
+    \item Published 3 first-author and 10+ co-authored journal papers on sensors, hardware systems, and space payloads
+\end{itemize}}
+
+\cventry{2013.03--2017.02}{\textbf{BSc in Mechanical Engineering}}{Konkuk University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Coursework in manufacturing methods, mechanical design, materials science, and geometric tolerancing
+    \item Hands-on experience in CAD modeling, mechanical assembly, PCB prototyping, and precision measurement
+\end{itemize}}
+
+%==================== PUBLICATIONS ====================%
+\section{Selected Publications}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Jinhwee Kil, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "Investigation of thermal management strategies for biological CubeSat payloads," \textit{Acta Astronautica}, 2024, Art. no. 228.
+    \item \textbf{\underline{Kim, S.}}; Park, S.; Pak, J.J., "Multi-Modal Multi-Array Electrochemical and Optical Sensor Suite for a Biological CubeSat Payload," \textit{MDPI Sensors}, 2024, 24, Art. no. 265.
+    \item \textbf{\underline{Saeyoung Kim}}, Ji-Hoon Han, Beelee Chua, James Jungho Pak, "A pH Sensing Pipette for Cross-Contamination Prevention in Industrial Fermentation," \textit{IEEE Trans. Industrial Electronics}, 2022, 69(7), 7461-7469.
+\end{itemize}
+\end{sloppypar}
+
+\vfill
+\centering{References available upon request.}
+
+\end{document}

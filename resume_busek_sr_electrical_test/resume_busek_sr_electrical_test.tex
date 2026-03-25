@@ -1,0 +1,129 @@
+\documentclass[letterpaper,11pt]{moderncv}
+\moderncvstyle{banking}
+\usepackage{xpatch}
+\moderncvcolor{black}
+\AtBeginDocument{\definecolor{color2}{rgb}{0,0,0}}
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\pagenumbering{arabic}
+\usepackage[unicode]{hyperref}
+\sloppy
+\usepackage{enumitem}
+
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%==================== PERSONAL INFO ====================%
+\name{\textcolor{black}{Saeyoung}}{Kim}
+\address{Cambridge, MA, USA}
+\phone[mobile]{+1 (351) 322 5510}
+\email{saeyoung\_kim@uml.edu}
+\social[linkedin]{saeyoung-macx-kim}
+\social[github]{PrimaryAnomaly}
+
+\recipient{Hiring Team}{Busek Co. Inc.\\Natick, MA}
+\date{\today}
+\opening{Dear Hiring Team,}
+\closing{Sincerely,}
+
+\begin{document}
+
+\makelettertitle
+
+I'm applying for the Senior Electrical Test Engineer position. Testing and validating electronic hardware for spaceflight is what I've been doing, and Busek's work on electric propulsion is the kind of program I want to keep doing it on.
+
+At Hanwha Systems, I led test campaigns for military SAR satellite programs across EM, QM, and FM builds. I designed the EGSE architecture, configured test setups, and spent most of my time in the lab with oscilloscopes, DMMs, and power supplies, running system-level tests and tracking down anomalies. When hardware failed during integration, I did the root cause analysis, worked through schematics and firmware logs to isolate the issue, and coordinated fixes with the design teams. I also wrote the controlled test procedures and documentation used for both internal engineering reviews and customer deliverables, and supported environmental testing campaigns including thermal vacuum and vibration qualification. Part of the role was mentoring junior engineers on test methodology and lab practices.
+
+My PhD was seven years of building and testing electronics from scratch. I designed circuits, laid out PCBs, wrote firmware in C/C++ for data acquisition over UART, SPI, and I2C, and then built the test setups to characterize and qualify everything. I ran environmental and reliability tests across multiple prototype cycles, learning to find failure modes early and trace them back to root cause.
+
+On the software side, I've been writing Python tools for automated process monitoring and anomaly detection at UMass Lowell, which has strengthened my ability to build data-driven test workflows.
+
+I also want to flag something that goes beyond the test engineer role. I still have strong working relationships at both Hanwha Systems and SatReC (Satrec Initiative), two of South Korea's major satellite manufacturers. Both are actively building out constellations and will need propulsion systems. South Korea's space industry is scaling fast, and Busek doesn't appear to have a footprint there yet. I can make direct introductions to the engineering and program teams at both companies. That's not something you'd get from a typical hire, and I think it could open real business for Busek.
+
+On the ITAR front: my green card is currently pending, and I expect to have it in hand within the next few months. I'm happy to discuss timing directly. I'm based in Cambridge, so Natick is a short commute.
+
+\makeletterclosing
+
+\newpage
+
+\makecvtitle
+\vspace{-3em}
+
+%==================== SUMMARY ====================%
+\section{Professional Summary}
+Electrical test and integration engineer with hands-on experience testing, validating, and troubleshooting electronic hardware for aerospace programs. Led system-level test campaigns for military satellite flight hardware, including test procedure development, lab setup and execution, environmental testing, and root cause analysis. Proficient with oscilloscopes, DMMs, power supplies, function generators, and custom test fixtures. Background in Python and MATLAB for automated data analysis, circuit design, PCB layout, and embedded firmware development. Experienced mentoring junior engineers on test methodology and lab best practices.
+
+\section{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Testing}{System-Level V\&V, Acceptance Testing, Environmental Testing (Thermal, Vibration), Subsystem Characterization}
+\cvitem{Instruments}{Oscilloscopes, DMMs, Power Supplies, Function Generators, Power Meters, Custom Test Fixtures}
+\cvitem{Programming}{Python, C/C++, MATLAB, Bash, Git, Linux}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Electronics}{Circuit Design, PCB Layout, Schematics/Datasheet Analysis, Soldering, PCBA Rework}
+\cvitem{Protocols}{UART, SPI, I2C, USB, RS232, Ethernet}
+\cvitem{Tools}{KiCad, AutoCAD, Fusion360, Docker, MS Office}
+\end{minipage}
+
+%==================== EXPERIENCE ====================%
+\section{Professional Experience}
+
+\cventry{2025.07--Present}{\textbf{Postdoctoral Associate} | Process Monitoring and Data-Driven Diagnostics}{University of Massachusetts Lowell}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Built Python-based diagnostic software replacing commercial platforms for real-time manufacturing process monitoring
+    \item Developed automated data pipelines for anomaly detection and quality prediction across 100+ production batches
+    \item Translated cross-functional stakeholder requirements into standardized test procedures and technical documentation
+    \item Identified process deviations through data analysis, driving root cause investigation and corrective actions
+\end{itemize}}
+
+\cventry{2024.02--2025.05}{\textbf{Systems Integration Engineer} | Satellite Assembly, Integration, and Testing}{Hanwha Systems}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Developed and executed system-level test plans for military SAR satellite qualification and acceptance across EM, QM, and FM builds
+    \item Designed Electrical Ground Support Equipment (EGSE) architecture and configured test setups for subsystem-level validation
+    \item Performed hands-on troubleshooting of electronic hardware anomalies during integration using oscilloscopes, DMMs, and power supplies
+    \item Supported environmental and functional testing campaigns including thermal vacuum and vibration qualification
+    \item Performed root cause analysis on electronic failures, tracing issues through schematics and firmware behavior to resolution
+    \item Wrote and maintained controlled test procedures, system problem reports, and troubleshooting documentation for internal and customer review
+    \item Mentored junior engineers on test equipment operation, debug procedures, and structured troubleshooting methodology
+    \item Coordinated across electrical, mechanical, software, and program teams to balance test coverage with schedule constraints
+    \item Managed lab equipment configuration, test setup integrity, and documentation standards
+\end{itemize}}
+
+%==================== EDUCATION ====================%
+\section{Education}
+\cventry{2017.03--2024.02}{\textbf{PhD in Electrical Engineering} | Embedded Sensor Systems and Hardware Test Development}{Korea University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Secured and managed \$220K research grant for CubeSat biological payload hardware development
+    \item Designed and built custom test setups using oscilloscopes, DMMs, function generators, and power meters for multi-channel sensor characterization
+    \item Designed electrical schematics, PCB layouts, and fabricated sensor hardware through full development cycle
+    \item Developed MCU firmware in C/C++ for real-time data acquisition over UART, SPI, and I2C interfaces
+    \item Performed iterative environmental and reliability testing to identify failure modes and validate design changes across prototype revisions
+    \item Diagnosed hardware/firmware interaction failures and implemented fixes through multiple revision cycles
+    \item Published 3 first-author and 10+ co-authored journal papers on sensors, test systems, and space payload hardware
+\end{itemize}}
+
+\cventry{2013.03--2017.02}{\textbf{BSc in Mechanical Engineering}}{Konkuk University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Conducted research in electrochemical sensor microfabrication, cleanroom processing, and hardware prototyping
+    \item Gained hands-on experience in CAD modeling, mechanical assembly, PCB prototyping, and precision measurement
+\end{itemize}}
+
+%==================== PUBLICATIONS ====================%
+\section{Selected Publications}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Jinhwee Kil, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "Investigation of thermal management strategies for biological CubeSat payloads," \textit{Acta Astronautica}, 2024, Art. no. 228.
+    \item \textbf{\underline{Kim, S.}}; Park, S.; Pak, J.J., "Multi-Modal Multi-Array Electrochemical and Optical Sensor Suite for a Biological CubeSat Payload," \textit{MDPI Sensors}, 2024, 24, Art. no. 265.
+    \item \textbf{\underline{Saeyoung Kim}}, Ji-Hoon Han, Beelee Chua, James Jungho Pak, "A pH Sensing Pipette for Cross-Contamination Prevention in Industrial Fermentation," \textit{IEEE Trans. Industrial Electronics}, 2022, 69(7), 7461-7469.
+\end{itemize}
+\end{sloppypar}
+
+\vfill
+\centering{References available upon request.}
+
+\end{document}

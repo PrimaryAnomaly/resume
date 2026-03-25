@@ -1,0 +1,17 @@
+Subject: Application - Senior Electrical Engineer
+
+Hi,
+
+I'm writing to apply for the Senior Electrical Engineer position. I've attached my resume and cover letter.
+
+Quick summary: I have a PhD in Electrical Engineering and hands-on experience in circuit design, PCB layout, embedded firmware (C/C++ over I2C, SPI, UART), and electrical prototyping including soldering and SMT rework. I spent seven years designing and building sensor electronics for a CubeSat payload, and most recently worked as a systems integration engineer on military satellite programs at Hanwha Systems, where I designed EGSE architecture and debugged electronic hardware on the bench. My PCB design experience is in KiCad, not Altium, but the fundamentals transfer directly.
+
+On work authorization: my green card is currently pending, and I expect to have it in hand within the next few months. Happy to discuss timing.
+
+I'm based in Cambridge, so Boston is an easy commute. Looking forward to hearing from you.
+
+Best,
+Saeyoung Kim
++1 (351) 322-5510
+saeyoung_kim@uml.edu
+linkedin.com/in/saeyoung-macx-kim

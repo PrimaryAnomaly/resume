@@ -26,11 +26,17 @@ Always ask: "What was the measurable impact?" or "Can you provide specific numbe
 - **No fluff**: Cut buzzwords, passive voice, vague claims
 - **Bullet formula**: `[Verb] + [What] + [How] + [Result]`
 
+## Resume Content Rules
+
+- **Always include publications section.** Do not strip publications from any resume, regardless of role level.
+- When combining cover letter + resume in one file (single-upload applications), use `\makelettertitle`/`\makeletterclosing`, then `\newpage`, then `\makecvtitle`.
+
 ## Cover Letters
 
 - Use `\makelettertitle` / `\makeletterclosing` with `\recipient`, `\date`, `\opening`, `\closing`. Do NOT use `\makecvtitle` for cover letters (causes header/content overlap).
 - Do NOT claim security clearance eligibility. User is not a US citizen.
-- If a role requires clearance, flag it and confirm before writing.
+- If a role requires clearance (not just ITAR), flag it and confirm before writing. Security clearance requires US citizenship; ITAR requires green card or citizenship.
+- **Always disclose green card pending status** in cover letters for ITAR roles. User's green card is pending (as of March 2025).
 
 ## Build
 
@@ -51,3 +57,5 @@ Run twice for cross-references to resolve cleanly.
 - Fix gray first name: `\name{\textcolor{black}{Saeyoung}}{Kim}`
 - Bold job titles: `\cventry{dates}{\textbf{Title}}{Employer}{Location}{}{}`
 - Use state abbreviations (MA, not Massachusetts)
+- Use Unicode characters directly (e.g., σ) instead of `\textsigma` which is undefined in XeLaTeX with Times New Roman
+- When chaining two xelatex passes with `&&`, the second pass may fail if the PDF is open in a viewer (file lock). Run separately if needed.

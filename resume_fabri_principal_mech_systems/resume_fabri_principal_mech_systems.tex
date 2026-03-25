@@ -1,0 +1,146 @@
+\documentclass[letterpaper,11pt]{moderncv}
+\moderncvstyle{banking}
+\usepackage{xpatch}
+\moderncvcolor{black}
+\AtBeginDocument{\definecolor{color2}{rgb}{0,0,0}}
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\pagenumbering{arabic}
+\usepackage[unicode]{hyperref}
+\sloppy
+\usepackage{enumitem}
+
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%==================== PERSONAL INFO ====================%
+\name{\textcolor{black}{Saeyoung}}{Kim}
+\address{Cambridge, MA, USA}
+\phone[mobile]{+1 (351) 322 5510}
+\email{saeyoung\_kim@uml.edu}
+\social[linkedin]{saeyoung-macx-kim}
+\social[github]{PrimaryAnomaly}
+
+\recipient{Hiring Team}{Fabri\\Boston, MA}
+\date{\today}
+\opening{Dear Hiring Team,}
+\closing{Sincerely,}
+
+\begin{document}
+
+\makelettertitle
+
+I'm applying for the Principal Mechanical Systems Engineer position. My background is a mix of mechanical engineering fundamentals and years of hands-on hardware development, and while my recent work has been closer to the electrical side, the core of what I do is the same thing this role asks for: taking a problem, working through the physics, designing and building hardware, testing it, and iterating until it works.
+
+My foundation is in mechanical engineering. My undergrad was in MechE, where I learned to think in terms of mechanics, materials, and manufacturing processes. That foundation carried through my PhD, where I designed, fabricated, and tested multi-sensor hardware systems from scratch. The work involved CAD modeling, cleanroom microfabrication (thin-film deposition, photolithography, chemical etching), precision mechanical assembly, and building custom test fixtures. Every revision was a full design-build-test-fail-learn cycle, often under tight timelines with limited resources. I managed the \$220K grant that funded the hardware program and made all the build-vs-buy decisions along the way.
+
+At Hanwha Systems, I worked at the system level on military satellite programs, which is where I developed the systems engineering mindset this role requires. I tracked linked requirements across electrical, mechanical, and software interfaces, coordinated across disciplines, and designed test infrastructure that had to work reliably under real constraints. I also contributed to facility architecture planning for a new production line, thinking about throughput, footprint, and scalability.
+
+I'm not going to pretend I have deep turbomachinery or casting equipment experience. What I bring is strong physics fundamentals across multiple domains, a track record of taking hardware from concept to working prototype fast, and the kind of ownership mentality that startup environments require. I learn new domains quickly and I'm not afraid to be on the shop floor.
+
+On ITAR: my green card is currently pending, and I expect to have it in hand within the next few months. I'm happy to discuss timing directly. I'm based in Cambridge, so Boston Metrowest is an easy commute.
+
+\makeletterclosing
+
+\newpage
+
+\makecvtitle
+\vspace{-3em}
+
+%==================== SUMMARY ====================%
+\section{Professional Summary}
+Systems engineer with a mechanical engineering foundation and hands-on experience designing, building, and testing hardware systems from concept through qualification. Background spans CAD modeling, precision fabrication, mechanical assembly, test fixture development, and cross-disciplinary systems integration for aerospace programs. Comfortable working across mechanical, electrical, thermal, and process domains. Experienced managing hardware programs end-to-end, including build-vs-buy decisions, vendor coordination, and rapid prototyping under tight timelines.
+
+\section{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Design}{CAD (Fusion360, SolidWorks, AutoCAD), Mechanical Assembly, DFM, Test Fixture Design}
+\cvitem{Fabrication}{Cleanroom Processing (Thin-Film Deposition, Photolithography, Etching), 3D Printing, CNC, Soldering, PCB Assembly}
+\cvitem{Programming}{Python, C/C++, MATLAB, Bash}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Systems}{Requirements Tracking, Interface Management, V\&V, System-Level Integration}
+\cvitem{Instruments}{Oscilloscopes, DMMs, Power Supplies, Function Generators, Calipers, Custom Test Fixtures}
+\cvitem{Analysis}{Root Cause Analysis, Process Monitoring, Data-Driven Diagnostics, SPC}
+\end{minipage}
+
+%==================== EXPERIENCE ====================%
+\section{Professional Experience}
+
+\cventry{2025.07--Present}{\textbf{Postdoctoral Associate} | Process Monitoring and Data-Driven Diagnostics}{University of Massachusetts Lowell}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Built Python-based diagnostic software for real-time manufacturing process monitoring across 100+ production batches
+    \item Developed automated anomaly detection and quality prediction pipelines for multi-day batch manufacturing cycles
+    \item Translated cross-functional requirements into standardized procedures and technical documentation
+\end{itemize}}
+
+\cventry{2024.02--2025.05}{\textbf{Systems Integration Engineer} | Satellite Assembly, Integration, and Testing}{Hanwha Systems}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Worked as a systems engineer across electrical, mechanical, and software interfaces on military SAR satellite programs
+    \item Designed and commissioned test equipment architecture for subsystem and system-level hardware validation
+    \item Tracked linked requirements and interface dependencies across tightly coupled disciplines during EM, QM, and FM builds
+    \item Performed hands-on mechanical assembly, electrical integration, and troubleshooting in cleanroom environments
+    \item Contributed to facility architecture planning for a high-throughput satellite production line, addressing scalability and footprint
+    \item Managed purchasing, integration, and commissioning of functional test systems
+    \item Coordinated across engineering teams and program leadership to resolve cross-disciplinary hardware issues on tight schedules
+\end{itemize}}
+
+%==================== EDUCATION ====================%
+\section{Education}
+\cventry{2017.03--2024.02}{\textbf{PhD in Electrical Engineering} | Hardware Systems Development}{Korea University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Secured and managed \$220K grant for CubeSat payload hardware development, owning all build-vs-buy decisions
+    \item Designed and built multi-sensor hardware systems through full cycle: CAD modeling, circuit/PCB design, cleanroom microfabrication, mechanical assembly, and system-level qualification
+    \item Performed cleanroom fabrication including thin-film deposition, photolithography, wet/dry chemical etching, and precision mechanical assembly
+    \item Built custom test fixtures and data acquisition setups for multi-channel sensor characterization
+    \item Executed rapid design-build-test iteration cycles across multiple hardware revisions under constrained timelines
+    \item Diagnosed cross-domain failures (mechanical, electrical, firmware) and drove fixes through multiple revision cycles
+    \item Published 3 first-author and 10+ co-authored papers on sensor hardware, space payloads, and embedded systems
+\end{itemize}}
+
+\cventry{2013.03--2017.02}{\textbf{BSc in Mechanical Engineering}}{Konkuk University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Coursework in mechanics, dynamics, thermodynamics, fluid mechanics, materials science, and machine design
+    \item Hands-on experience in CAD modeling, mechanical prototyping, precision measurement, and microfabrication
+\end{itemize}}
+
+%==================== PUBLICATIONS ====================%
+\section{Publications}
+\subsection{Journal Publications}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item \textbf{\underline{Saeyoung Kim}}, Jaewon Lee, Kimia Babaei, Seonkgyu Yoon, "Digital Twins in Lyophilization: Advances in Pharmaceutical Process Development and Optimization," \textit{Biotechnology Advances}, 2026. (Manuscript in Preparation, Target Submission: Q1 2026)
+    \item Jinhwee Kil, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "Investigation of thermal management strategies for biological CubeSat payloads," Acta Astronautica, 2024, Art. no. 228. DOI: 10.1016/j.actaastro.2024.11.059.
+    \item \textbf{\underline{Kim, S.}}; Park, S.; Pak, J.J., "Multi-Modal Multi-Array Electrochemical and Optical Sensor Suite for a Biological CubeSat Payload," MDPI Sensors, 2024, 24, Art. no. 265. DOI: 10.3390/s24010265.
+    \item Ji-Hoon Han, Sang Hyun Park, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "A Performance Improvement of Enzyme-Based Electrochemical Lactate Sensor Fabricated by Electroplating Novel PdCu Mediator on a Laser Induced Graphene Electrode," Bioelectrochemistry, 2022, 148, 108259. DOI: 10.1016/j.bioelechem.2022.108259.
+    \item \textbf{\underline{Saeyoung Kim}}, Ji-Hoon Han, Beelee Chua, James Jungho Pak, "A pH Sensing Pipette for Cross-Contamination Prevention in Industrial Fermentation," IEEE Transactions on Industrial Electronics, 2022, 69(7), 7461-7469. DOI: 10.1109/TIE.2021.3099251.
+    \item S.D. Raut, N.M. Shinde, B.G. Ghule, \textbf{\underline{S. Kim}}, J.J. Pak, Q. Xia, R.S. Mane, "Room-Temperature Solution Processed Sharp-Edged Nanoshapes of," Chemical Engineering Journal, 2022, 433(2), 133627. DOI: 10.1016/j.cej.2021.133627.
+    \item S.E. Jeong, \textbf{\underline{S. Kim}}, J.H. Han, J. Jungho Pak, "Simple Laser-Induced Graphene Fiber Electrode Fabrication for High-Performance Heavy-Metal Sensing," Microchemical Journal, 2022, 172, 106950. DOI: 10.1016/j.microc.2021.106950.
+    \item Sanghoon Cho, Jungmo Jung, \textbf{\underline{Saeyoung Kim}}, James Pak, "Conduction Mechanism and Synaptic Behaviour of Interfacial Switching AlOσ-based RRAM," Semiconductor Science and Technology, 2020, 35(8), 085006. DOI: 10.1088/1361-6641/ab8d0e.
+    \item Ji-Hoon Han, \textbf{\underline{Saeyoung Kim}}, Jaesung Choi, Sora Kang, Youngmi Kim Pak, James Jungho Pak, "Development of Multi-Well-Based Electrochemical Dissolved Oxygen Sensor Array," Sensors and Actuators B: Chemical, 2020, 306, 127465. DOI: 10.1016/j.snb.2019.127465.
+\end{itemize}
+\end{sloppypar}
+
+\subsection{Conference Presentations}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item \textit{Thermal Management System for a Fluidic Card in a Small Satellite Biological Payload}, Korean Institute of Electrical Engineers (KIEE) Autumn Conference, 2022.
+    \item \textit{A Pipette with an Integrated pH Sensor for Liquid Sampling Applications}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2019.
+    \item \textit{IoT System for Monitoring pH, Dissolved Oxygen, Temperature, and Electrical Conductivity in Liquids}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2018.
+    \item \textit{Development Trends of Non-Invasive Glucose Sensor Technology}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2017.
+\end{itemize}
+\end{sloppypar}
+
+\subsection{Seminar Presentations}
+\begin{itemize}[leftmargin=0.5cm, itemsep=2pt, parsep=1pt]
+    \item \textit{Bioprocessing in Space: Challenges and Opportunities for Pharmaceutical Manufacturing Beyond Earth}, Lowell Center for Space Science and Technology (LoCSST), UMass Lowell, 2025.
+\end{itemize}
+
+\vfill
+\centering{References available upon request.}
+
+\end{document}

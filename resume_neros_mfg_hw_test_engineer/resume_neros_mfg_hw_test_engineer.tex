@@ -1,0 +1,106 @@
+\documentclass[letterpaper,11pt]{moderncv}
+\moderncvstyle{banking}
+\usepackage{xpatch}
+\moderncvcolor{black}
+\AtBeginDocument{\definecolor{color2}{rgb}{0,0,0}}
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\pagenumbering{arabic}
+\usepackage[unicode]{hyperref}
+\sloppy
+\usepackage{enumitem}
+
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%==================== PERSONAL INFO ====================%
+\name{\textcolor{black}{Saeyoung}}{Kim}
+\address{Cambridge, MA, USA}
+\phone[mobile]{+1 (351) 322 5510}
+\email{saeyoung\_kim@uml.edu}
+\social[linkedin]{saeyoung-macx-kim}
+\social[github]{PrimaryAnomaly}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+%==================== SUMMARY ====================%
+\section{Professional Summary}
+Manufacturing test and hardware engineer with hands-on experience designing test fixtures, bringing up test instruments, and validating electromechanical systems from prototype through production. Built and commissioned test infrastructure for military satellite flight hardware and embedded sensor payloads, including EGSE architecture, custom data acquisition setups, and automated diagnostic tools. Proficient in Python for test automation and data analysis, with deep electronics debugging experience across circuit design, PCB layout, and embedded firmware. Background in root cause analysis, reliability testing, sensor integration, and cross-functional coordination in fast-paced, hardware-intensive environments.
+
+\section{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Test Hardware}{Test Fixture Design, EGSE Architecture, Data Acquisition Systems, Test Instrument Bring-up and Commissioning}
+\cvitem{Electronics}{Circuit Design, PCB Layout, Soldering, PCBA Rework, Schematics/Datasheet Analysis (KiCad, AutoCAD)}
+\cvitem{Programming}{Python, C/C++, MATLAB, Bash, Git, Linux}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Protocols}{UART, SPI, I2C, USB, RS232, Ethernet}
+\cvitem{Instruments}{Oscilloscopes, DMMs, Function Generators, Power Meters, Custom Test Fixtures}
+\cvitem{Analysis}{Root Cause Analysis, SPC, Process Monitoring, Reliability/Environmental Testing, Anomaly Detection}
+\end{minipage}
+
+%==================== EXPERIENCE ====================%
+\section{Professional Experience}
+
+\cventry{2025.07--Present}{\textbf{Postdoctoral Associate} | Process Monitoring and Data-Driven Diagnostics}{University of Massachusetts Lowell}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Built Python-based diagnostic software suite replacing commercial platforms for real-time manufacturing process monitoring
+    \item Developed automated data pipelines for anomaly detection and quality prediction across 100+ pharmaceutical production batches
+    \item Designed data-driven test strategies with automated error flagging for multi-day batch manufacturing cycles
+    \item Translated cross-functional stakeholder requirements into standardized test procedures and technical documentation
+\end{itemize}}
+
+\cventry{2024.02--2025.05}{\textbf{Systems Integration Engineer} | Satellite Test Equipment and Integration}{Hanwha Systems}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Designed and commissioned Electrical Ground Support Equipment (EGSE) architecture for satellite subsystem test and validation
+    \item Developed and executed system-level test plans for military SAR satellite qualification across EM, QM, and FM builds
+    \item Configured and maintained modular test setups including data acquisition hardware, sensor interfaces, and electrical connections
+    \item Performed hands-on root cause analysis of electromechanical anomalies during integration, driving issues to resolution
+    \item Led test equipment reliability improvements by identifying recurring failure modes and implementing corrective actions
+    \item Managed purchasing, integration, and commissioning of functional test systems for production use
+    \item Provided design-for-test feedback to hardware teams based on defects encountered during assembly and integration campaigns
+    \item Wrote and maintained controlled test procedures, system problem reports, and troubleshooting documentation
+    \item Coordinated across electrical, mechanical, software, and program teams to balance test coverage with production timelines
+\end{itemize}}
+
+%==================== EDUCATION ====================%
+\section{Education}
+\cventry{2017.03--2024.02}{\textbf{PhD in Electrical Engineering} | Embedded Sensor Systems and Hardware Test Development}{Korea University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Secured and managed \$220K research grant for CubeSat biological payload hardware development
+    \item Designed and built custom test fixtures and data acquisition setups using oscilloscopes, DMMs, function generators, and power meters for multi-channel sensor characterization
+    \item Designed multi-modal electrochemical and optical sensor suite through full cycle: circuit design, PCB layout, MEMS cleanroom fabrication, assembly, and system-level qualification
+    \item Developed MCU firmware in C/C++ for real-time multi-channel data acquisition over UART, SPI, and I2C interfaces
+    \item Performed iterative environmental and reliability testing to identify failure modes and optimize fabrication parameters across prototype revisions
+    \item Diagnosed hardware/firmware interaction failures and implemented fixes through multiple revision cycles
+    \item Published 3 first-author and 10+ co-authored journal papers on sensors, test systems, and space payload hardware
+\end{itemize}}
+
+\cventry{2013.03--2017.02}{\textbf{BSc in Mechanical Engineering}}{Konkuk University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Conducted research in electrochemical sensor microfabrication, cleanroom processing, and hardware prototyping
+    \item Gained hands-on experience in CAD modeling, mechanical assembly, PCB prototyping, and precision measurement
+\end{itemize}}
+
+%==================== PUBLICATIONS ====================%
+\section{Selected Publications}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Jinhwee Kil, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "Investigation of thermal management strategies for biological CubeSat payloads," \textit{Acta Astronautica}, 2024, Art. no. 228.
+    \item \textbf{\underline{Kim, S.}}; Park, S.; Pak, J.J., "Multi-Modal Multi-Array Electrochemical and Optical Sensor Suite for a Biological CubeSat Payload," \textit{MDPI Sensors}, 2024, 24, Art. no. 265.
+    \item \textbf{\underline{Saeyoung Kim}}, Ji-Hoon Han, Beelee Chua, James Jungho Pak, "A pH Sensing Pipette for Cross-Contamination Prevention in Industrial Fermentation," \textit{IEEE Trans. Industrial Electronics}, 2022, 69(7), 7461-7469.
+\end{itemize}
+\end{sloppypar}
+
+\vfill
+\centering{References available upon request.}
+
+\end{document}

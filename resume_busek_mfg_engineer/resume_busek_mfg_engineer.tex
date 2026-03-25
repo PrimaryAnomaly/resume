@@ -1,0 +1,106 @@
+\documentclass[letterpaper,11pt]{moderncv}
+\moderncvstyle{banking}
+\usepackage{xpatch}
+\moderncvcolor{black}
+\AtBeginDocument{\definecolor{color2}{rgb}{0,0,0}}
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\pagenumbering{arabic}
+\usepackage[unicode]{hyperref}
+\sloppy
+\usepackage{enumitem}
+
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%==================== PERSONAL INFO ====================%
+\name{\textcolor{black}{Saeyoung}}{Kim}
+\address{Cambridge, MA, USA}
+\phone[mobile]{+1 (351) 322 5510}
+\email{saeyoung\_kim@uml.edu}
+\social[linkedin]{saeyoung-macx-kim}
+\social[github]{PrimaryAnomaly}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+%==================== SUMMARY ====================%
+\section{Professional Summary}
+Manufacturing and integration engineer with hands-on experience assembling, testing, and qualifying electromechanical hardware for aerospace programs. Built systems from PCB fabrication and mechanical assembly through system-level verification, and wrote the controlled procedures and documentation used on the production floor. Background in process improvement, root cause analysis, cleanroom operations, and migrating workflows from ad hoc methods to structured, traceable systems. Proficient in Python and MATLAB for test automation and process monitoring.
+
+\section{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Manufacturing}{Assembly Procedures, Work Instructions, Build Documentation, Process Improvement, Production Floor Support}
+\cvitem{Electronics}{Circuit Design, PCB Layout, Soldering, PCBA Rework, Electrical Board Testing}
+\cvitem{Programming}{Python, C/C++, MATLAB, Bash, Git}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Testing}{System-Level Verification, Acceptance Testing, Subsystem Characterization, Environmental Testing}
+\cvitem{Fabrication}{Cleanroom Processing, MEMS Fabrication, 3D Printing, CNC}
+\cvitem{Tools}{Oscilloscopes, DMMs, Function Generators, KiCad, Fusion360, SolidWorks, MS Office}
+\end{minipage}
+
+%==================== EXPERIENCE ====================%
+\section{Professional Experience}
+
+\cventry{2025.07--Present}{\textbf{Postdoctoral Associate} | Process Monitoring and Data-Driven Diagnostics}{University of Massachusetts Lowell}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Built Python-based diagnostic software replacing commercial platforms for real-time manufacturing process monitoring
+    \item Developed automated data pipelines for anomaly detection and quality prediction across 100+ production batches
+    \item Translated cross-functional stakeholder requirements into standardized procedures and technical documentation
+    \item Identified process deviations through data analysis, driving root cause investigation and corrective actions
+\end{itemize}}
+
+\cventry{2024.02--2025.05}{\textbf{Systems Integration Engineer} | Satellite Assembly, Integration, and Testing}{Hanwha Systems}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Performed hands-on mechanical assembly and electrical integration of military satellite hardware in cleanroom environments
+    \item Wrote and maintained controlled manufacturing and test procedures, work instructions, and build documentation for technician use
+    \item Developed and executed system-level test plans for satellite qualification and acceptance across EM, QM, and FM builds
+    \item Performed root cause analysis of assembly and integration defects, implementing corrective actions to prevent recurrence
+    \item Provided manufacturing feedback to design teams based on build issues encountered during integration campaigns
+    \item Contributed to facility architecture planning for a high-throughput satellite production line
+    \item Coordinated across electrical, mechanical, software, and program teams to maintain production schedules
+    \item Trained junior engineers on assembly procedures, test equipment operation, and structured troubleshooting
+\end{itemize}}
+
+%==================== EDUCATION ====================%
+\section{Education}
+\cventry{2017.03--2024.02}{\textbf{PhD in Electrical Engineering} | Embedded Sensor Systems and Hardware Development}{Korea University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Secured and managed \$220K research grant for CubeSat biological payload hardware development
+    \item Took sensor hardware from design through fabrication, assembly, and system-level qualification across multiple prototype revisions
+    \item Performed cleanroom MEMS fabrication including photolithography, thin-film deposition, and wet/dry etching processes
+    \item Designed electrical schematics, PCB layouts, and assembled sensor boards with hands-on soldering and rework
+    \item Built custom test setups using oscilloscopes, DMMs, and function generators for subsystem characterization
+    \item Performed iterative environmental and reliability testing to identify failure modes and optimize fabrication parameters
+    \item Created and maintained detailed build documentation and test procedures for reproducible hardware assembly
+    \item Published 3 first-author and 10+ co-authored journal papers on sensors, hardware systems, and space payloads
+\end{itemize}}
+
+\cventry{2013.03--2017.02}{\textbf{BSc in Mechanical Engineering}}{Konkuk University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Conducted research in electrochemical sensor microfabrication, cleanroom processing, and hardware prototyping
+    \item Gained hands-on experience in CAD modeling, mechanical assembly, PCB prototyping, and precision measurement
+\end{itemize}}
+
+%==================== PUBLICATIONS ====================%
+\section{Selected Publications}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Jinhwee Kil, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "Investigation of thermal management strategies for biological CubeSat payloads," \textit{Acta Astronautica}, 2024, Art. no. 228.
+    \item \textbf{\underline{Kim, S.}}; Park, S.; Pak, J.J., "Multi-Modal Multi-Array Electrochemical and Optical Sensor Suite for a Biological CubeSat Payload," \textit{MDPI Sensors}, 2024, 24, Art. no. 265.
+    \item \textbf{\underline{Saeyoung Kim}}, Ji-Hoon Han, Beelee Chua, James Jungho Pak, "A pH Sensing Pipette for Cross-Contamination Prevention in Industrial Fermentation," \textit{IEEE Trans. Industrial Electronics}, 2022, 69(7), 7461-7469.
+\end{itemize}
+\end{sloppypar}
+
+\vfill
+\centering{References available upon request.}
+
+\end{document}
