@@ -49,6 +49,21 @@ cmd.exe /c "cd /d <windows-path-to-subfolder> && xelatex.exe <filename>.tex"
 Do NOT use `xelatex` directly in bash — it will fail with "command not found".
 Run twice for cross-references to resolve cleanly.
 
+## Resume Formatting Rules
+
+- **No word hyphenation**: Use `\hyphenpenalty=10000` to prevent words from being split across lines.
+- **Keep bullets to one line**: Write concise bullets that fit on a single line where possible. Trim filler words rather than wrapping.
+- **Keep headers with content**: Use `\needspace{6\baselineskip}` (or more) before section headers and `\cventry` blocks to prevent orphaned headers at page bottoms.
+- **Full publications**: Always include the complete publication list (9 journals, 4 conferences, 1 seminar as of March 2026). Never truncate to "Selected Publications."
+- **Page numbering**: Use `\usepackage{lastpage}` with `\rfoot{\addressfont\itshape\textcolor{gray}{\thepage/\pageref{LastPage}}}` for correct N/M page numbers. Compile twice.
+
+## File Parsing (PPTX/DOCX)
+
+- `liteparse` (`lit` CLI) needs LibreOffice for Office files. LibreOffice is at `F:\LibreOffice\program` but not on Windows PATH.
+- Workaround: Convert directly with `cmd.exe /c "F:\LibreOffice\program\soffice.exe --headless --convert-to pdf --outdir <outdir> <infile>"`, then read the PDF.
+- Google Drive is mountable in WSL: `sudo mkdir /mnt/g && sudo mount -t drvfs G: /mnt/g`
+- UMass Lowell OneDrive is NOT synced locally / not accessible from WSL.
+
 ## LaTeX Notes
 
 - Requires XeLaTeX (for fontspec)

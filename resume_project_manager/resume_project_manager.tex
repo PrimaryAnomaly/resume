@@ -1,0 +1,176 @@
+\documentclass[letterpaper,11pt]{moderncv}
+\moderncvstyle{banking}
+\usepackage{xpatch}
+\moderncvcolor{black}
+\AtBeginDocument{\definecolor{color2}{rgb}{0,0,0}}
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\pagenumbering{arabic}
+\usepackage[unicode]{hyperref}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{lastpage}
+\rfoot{\addressfont\itshape\textcolor{gray}{\thepage/\pageref{LastPage}}}
+
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%==================== PERSONAL INFO ====================%
+\name{\textcolor{black}{Saeyoung}}{Kim}
+\address{Cambridge, MA, USA}
+\phone[mobile]{+1 (351) 322 5510}
+\email{saeyoung\_kim@uml.edu}
+\social[linkedin]{saeyoung-macx-kim}
+\social[github]{PrimaryAnomaly}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+%==================== SUMMARY ====================%
+\section{Professional Summary}
+Technical project manager and systems engineer who has led multi-year, cross-border R\&D programs in pharmaceutical manufacturing, space hardware, and AI-driven process software. Currently managing the US side of a multi-million-dollar KEIT-funded digital twin program. Previously ran a KRW 300M (\textasciitilde\$230K) government-funded CubeSat payload project through 8 years of development. I build the software I manage: full-stack web apps, real-time data pipelines, simulation models, and multi-agent AI systems. Bilingual in English and Korean, comfortable bridging technical teams across time zones and institutions.
+
+%==================== TECHNICAL SKILLS ====================%
+\section{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{Project Mgmt}{WBS Development, Gantt Charts, Critical Path Analysis, Risk Tracking, Milestone Planning, Cross-Team Coordination, Government Project Reporting}
+\cvitem{Software Dev}{Python, C/C++, MATLAB, FastAPI, Next.js, Docker, Git, Linux}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\cvitem{PM Tools}{Excel WBS/Gantt, PowerPoint Status Decks, Git/GitHub}
+\cvitem{Data/AI}{PCA, PLS, ODE Modeling, TimescaleDB, Telegraf, Real-Time Data Pipelines}
+\cvitem{Hardware}{Circuit Design, PCB Layout (KiCad), Sensor Systems, Embedded Firmware, CAD (Fusion360, SolidWorks)}
+\end{minipage}
+
+%==================== PROJECT MANAGEMENT ====================%
+\section{Project Management Experience}
+
+\cventry{2025.07--Present}{\textbf{Project Manager and Technical Lead} | Lyophilization Digital Twin}{University of Massachusetts Lowell (KEIT-funded)}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Manage US side of a 5-year KEIT-funded digital twin for pharmaceutical freeze-drying (mRNA-LNP), coordinating a 6-person team with Korean partners
+    \item Maintain a 15-work-package WBS with multi-year Gantt chart across two phases (3-year R\&D + 2-year technology transfer)
+    \item Run weekly status meetings with executive summaries, milestone tracking, and risk/blocker identification
+    \item Track procurement of specialized equipment (\$194K+ TDLAS, 16-week lead time) and coordinate vendor timelines with project milestones
+    \item Assign task ownership with monthly milestones across parallel workstreams: experimentation, modeling, frontend, backend
+    \item Pivoted from gPROMS to Python when the commercial tool could not support the required data pipeline, keeping the project on schedule
+    \item Built the project's core software: 9-state ODE model, multi-agent AI system (DAEMON), FastAPI + Next.js web app, Telegraf/TimescaleDB pipeline
+\end{itemize}}
+
+\needspace{12\baselineskip}
+\cventry{2017.03--2024.02}{\textbf{Project Manager and Technical Lead} | BioCubeSat Biological Payload (CyanOx)}{Korea University (NRF + GPF funded)}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Led an 8-year, KRW 300M (\textasciitilde\$230K) program across two government grants (5-year GPF + 3-year NRF) to build a 3U CubeSat biological payload
+    \item Created WBS across 6 subsystems (Mechanical, Fluidics, Sensors, Control, MCU, Biology) with 12 versioned action plans and Gantt scheduling
+    \item Wrote monthly work plans with per-person task assignments and collected monthly progress reports from each of 4 team members
+    \item Managed the full research budget (personnel, materials, equipment, travel) with NRF/GPF compliance
+    \item Delivered all milestones to the funding agency: kickoff report, 2 annual reports, 1 final report (5 to 8 revision cycles each)
+    \item Ran weekly team meetings covering scope review, Gantt status, development methods, and monthly plan alignment
+    \item Coordinated the design-build-test cycle across 6 subsystems through two full hardware integration rounds
+    \item Published 3 first-author journal papers and delivered 4 conference presentations as project deliverables
+\end{itemize}}
+
+\needspace{8\baselineskip}
+\cventry{2015--2023}{\textbf{Co-Founder and Lead Organizer} | Effective Altruism South Korea and AMF Korea}{Nonprofit Community Management}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Co-founded Effective Altruism South Korea in 2015, built a bilingual community with regular meetups and tracked metrics
+    \item Secured over \$100K in grants from the Centre for Effective Altruism for community operations and programs
+    \item Built organizational infrastructure from scratch: OKRs, member pipeline, finances, project tracking, standard processes
+    \item Ran concurrent projects: book club, Korean translation of EA materials, outreach strategy, member surveys
+    \item Helped found AMF Korea as a registered nonprofit in 2023, recruiting promoters and preparing bilingual legal documents
+\end{itemize}}
+
+%==================== EXPERIENCE ====================%
+\needspace{6\baselineskip}
+\section{Professional Experience}
+
+\cventry{2025.07--Present}{\textbf{Postdoctoral Associate} | Manufacturing Process Monitoring and Test Automation}{University of Massachusetts Lowell}{Lowell, MA, USA}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Built Python diagnostic software suite replacing commercial platforms for real-time manufacturing process monitoring
+    \item Developed anomaly detection and quality prediction pipelines across 100+ pharmaceutical production batches
+    \item Designed data-driven test strategies with automated error flagging for multi-day batch manufacturing cycles
+    \item Translated cross-functional stakeholder requirements into standardized test procedures and documentation
+\end{itemize}}
+
+\needspace{6\baselineskip}
+\cventry{2024.02--2025.05}{\textbf{Systems Integration Engineer} | Test Equipment Design and Satellite Integration}{Hanwha Systems}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Designed and deployed EGSE architecture for satellite subsystem factory acceptance testing
+    \item Developed and executed system-level test plans for military SAR satellite qualification across EM, QM, and FM builds
+    \item Delivered turnkey test setups with data acquisition hardware, sensor interfaces, and electrical connections for production
+    \item Performed root cause analysis of electromechanical failures during integration, driving corrective actions to resolution
+    \item Provided design-for-test recommendations based on failure trends and fault isolation during assembly campaigns
+    \item Managed purchasing, integration, and commissioning of functional test systems for factory and field deployment
+    \item Led test equipment reliability improvements by identifying recurring failure modes and implementing fixes
+    \item Wrote and maintained controlled test procedures, fixture documentation, and troubleshooting guides
+    \item Trained engineers and technicians on test equipment operation, debug processes, and troubleshooting methods
+    \item Coordinated across electrical, mechanical, software, and program teams to balance test coverage with schedules
+\end{itemize}}
+
+%==================== EDUCATION ====================%
+\needspace{6\baselineskip}
+\section{Education}
+\cventry{2017.03--2024.02}{\textbf{PhD in Electrical Engineering} | Embedded Sensor Systems and Hardware Test Development}{Korea University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Secured and managed KRW 300M (\textasciitilde\$230K) in research grants for CubeSat biological payload development
+    \item Built custom test fixtures and data acquisition setups using oscilloscopes, DMMs, function generators, and power supplies
+    \item Designed multi-modal sensor suite through full cycle: schematics, PCB layout, fabrication, assembly, and qualification
+    \item Developed MCU firmware in C/C++ for real-time multi-channel data acquisition over UART, SPI, and I2C
+    \item Performed iterative environmental and reliability testing to identify failure modes and optimize fabrication parameters
+    \item Diagnosed hardware/firmware interaction failures and implemented corrective actions through multiple revision cycles
+    \item Published 3 first-author and 10+ co-authored journal papers on sensors, test systems, and space payload hardware
+\end{itemize}}
+
+\cventry{2013.03--2017.02}{\textbf{BSc in Mechanical Engineering}}{Konkuk University}{Seoul, South Korea}{}{
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item Conducted research in electrochemical sensor microfabrication, cleanroom processing, and hardware prototyping
+    \item Gained hands-on experience in CAD modeling, mechanical assembly, PCB prototyping, and precision measurement
+\end{itemize}}
+
+%==================== PUBLICATIONS ====================%
+\needspace{6\baselineskip}
+\section{Publications}
+\subsection{Journal Publications}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item \textbf{\underline{Saeyoung Kim}}, Jaewon Lee, Kimia Babaei, Seonkgyu Yoon, "Digital Twins in Lyophilization: Advances in Pharmaceutical Process Development and Optimization," \textit{Biotechnology Advances}, 2026. (Manuscript in Preparation, Target Submission: Q1 2026)
+    \item Jinhwee Kil, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "Investigation of thermal management strategies for biological CubeSat payloads," \textit{Acta Astronautica}, 2024, Art. no. 228.
+    \item \textbf{\underline{Kim, S.}}; Park, S.; Pak, J.J., "Multi-Modal Multi-Array Electrochemical and Optical Sensor Suite for a Biological CubeSat Payload," \textit{MDPI Sensors}, 2024, 24, Art. no. 265.
+    \item Ji-Hoon Han, Sang Hyun Park, \textbf{\underline{Saeyoung Kim}}, James Jungho Pak, "A Performance Improvement of Enzyme-Based Electrochemical Lactate Sensor Fabricated by Electroplating Novel PdCu Mediator on a Laser Induced Graphene Electrode," \textit{Bioelectrochemistry}, 2022, 148, 108259.
+    \item \textbf{\underline{Saeyoung Kim}}, Ji-Hoon Han, Beelee Chua, James Jungho Pak, "A pH Sensing Pipette for Cross-Contamination Prevention in Industrial Fermentation," \textit{IEEE Trans. Industrial Electronics}, 2022, 69(7), 7461-7469.
+    \item S.D. Raut, N.M. Shinde, B.G. Ghule, \textbf{\underline{S. Kim}}, J.J. Pak, Q. Xia, R.S. Mane, "Room-Temperature Solution Processed Sharp-Edged Nanoshapes of," \textit{Chemical Engineering Journal}, 2022, 433(2), 133627.
+    \item S.E. Jeong, \textbf{\underline{S. Kim}}, J.H. Han, J. Jungho Pak, "Simple Laser-Induced Graphene Fiber Electrode Fabrication for High-Performance Heavy-Metal Sensing," \textit{Microchemical Journal}, 2022, 172, 106950.
+    \item Sanghoon Cho, Jungmo Jung, \textbf{\underline{Saeyoung Kim}}, James Pak, "Conduction Mechanism and Synaptic Behaviour of Interfacial Switching AlOσ-based RRAM," \textit{Semiconductor Science and Technology}, 2020, 35(8), 085006.
+    \item Ji-Hoon Han, \textbf{\underline{Saeyoung Kim}}, Jaesung Choi, Sora Kang, Youngmi Kim Pak, James Jungho Pak, "Development of Multi-Well-Based Electrochemical Dissolved Oxygen Sensor Array," \textit{Sensors and Actuators B: Chemical}, 2020, 306, 127465.
+\end{itemize}
+\end{sloppypar}
+
+\subsection{Conference Presentations}
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item \textit{Thermal Management System for a Fluidic Card in a Small Satellite Biological Payload}, Korean Institute of Electrical Engineers (KIEE) Autumn Conference, 2022.
+    \item \textit{A Pipette with an Integrated pH Sensor for Liquid Sampling Applications}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2019.
+    \item \textit{IoT System for Monitoring pH, Dissolved Oxygen, Temperature, and Electrical Conductivity in Liquids}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2018.
+    \item \textit{Development Trends of Non-Invasive Glucose Sensor Technology}, Korean Institute of Electrical Engineers (KIEE) Summer Conference, 2017.
+\end{itemize}
+\end{sloppypar}
+
+\subsection{Seminar Presentations}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt]
+    \item \textit{Bioprocessing in Space: Challenges and Opportunities for Pharmaceutical Manufacturing Beyond Earth}, Lowell Center for Space Science and Technology (LoCSST), UMass Lowell, 2025.
+\end{itemize}
+
+\vfill
+\centering{References available upon request.}
+
+\end{document}
