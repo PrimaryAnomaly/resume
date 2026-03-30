@@ -40,10 +40,10 @@ Always ask: "What was the measurable impact?" or "Can you provide specific numbe
 
 ## Build
 
-XeLaTeX is installed via MiKTeX on Windows, not in WSL. Compile using `cmd.exe` with the Windows path equivalent of the current working directory:
+XeLaTeX is installed via MiKTeX on Windows at `F:\MiKTeX\miktex\bin\x64\xelatex.exe`. It is NOT on the Windows PATH. Compile using the full path:
 
 ```bash
-cmd.exe /c "cd /d <windows-path-to-subfolder> && xelatex.exe <filename>.tex"
+cmd.exe /c "cd /d <windows-path-to-subfolder> && F:\MiKTeX\miktex\bin\x64\xelatex.exe <filename>.tex"
 ```
 
 Do NOT use `xelatex` directly in bash — it will fail with "command not found".
@@ -74,3 +74,14 @@ Run twice for cross-references to resolve cleanly.
 - Use state abbreviations (MA, not Massachusetts)
 - Use Unicode characters directly (e.g., σ) instead of `\textsigma` which is undefined in XeLaTeX with Times New Roman
 - When chaining two xelatex passes with `&&`, the second pass may fail if the PDF is open in a viewer (file lock). Run separately if needed.
+
+## Korean Resume Notes
+
+- For Korean resumes, use `xetexko` package (NOT `xeCJK`). xeCJK is for Chinese/Japanese and eats Korean word spaces.
+- Font: Noto Sans KR (available at `C:\Windows\Fonts\NotoSansKR-Regular.ttf` and `NotoSansKR-Bold.ttf`). Use file path approach with fontspec.
+- Set `\setmainhangulfont` and `\setsanshangulfont` for Korean characters, `\setmainfont`/`\setsansfont` for Latin.
+- Use `\raggedright` for Korean text. Justified text causes uneven word spacing since TeX stretches spaces differently for CJK.
+- Do NOT use `InterHangul` font option to add inter-character spacing. Korean characters within words should be tight; only word spaces provide separation.
+- The Korean PM resume uses the Sourabh Bajaj / Hyunggi Chang article-based template (not moderncv) for cleaner spacing.
+- **No transliterations**: Do not transliterate English words into Korean (e.g., 페이로드, 모니터링, 인터페이스). Either use the proper Korean word (탑재체, 공동체, 작업 흐름) or keep the English term as-is (Payload, Monitoring, Interface). The user strongly dislikes 번역투 (translation-style Korean).
+- LaTeX tilde `~` is a non-breaking space, not a range character. Use `\textasciitilde` for ranges like "5~8차".
