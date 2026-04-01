@@ -16,6 +16,7 @@
 \usepackage{fancyhdr}
 \usepackage{tabularx}
 \usepackage{amsmath}
+\usepackage{graphicx}
 \usepackage{fontspec}
 \usepackage{xetexko}
 \usepackage{lastpage}
@@ -113,11 +114,18 @@
 \begin{document}
 
 %----------HEADING-----------------
+\begin{minipage}[c]{0.75\textwidth}
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large 김세영 Saeyoung Kim} & \href{mailto:saeyoung_kim@uml.edu}{saeyoung\_kim@uml.edu} \\
   미국 매사추세츠주 케임브리지 & +1 (351) 322-5510 \\
   \href{https://github.com/PrimaryAnomaly}{GitHub: PrimaryAnomaly} & \href{https://linkedin.com/in/saeyoung-macx-kim}{LinkedIn: saeyoung-macx-kim} \\
 \end{tabular*}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.2\textwidth}
+\raggedleft
+\includegraphics[width=2.4cm]{../profilepic/profile_pic_cropped.png}
+\end{minipage}
 
 %-----------Summary-----------------
 \section{경력 요약}
